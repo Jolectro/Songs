@@ -2,13 +2,13 @@
 const stories = {
   "Let It Burn Down": {
     emoji: "🔥",
-    desc: "A blaze that purifies the soul from lies and fear.",
+    desc: "Burning down all lies and fear.",
     textFile: "stories/let-it-burn-down.txt",
     narration: "narrations/let-it-burn-down.mp3"
   },
   "Broken Dreams": {
     emoji: "💔",
-    desc: "A fallen city and the last spark of hope.",
+    desc: "A fallen city of dreams and the last spark of hope.",
     textFile: "stories/broken-dreams.txt",
     narration: "narrations/broken-dreams.mp3"
   }
@@ -24,13 +24,11 @@ storyList.innerHTML = Object.keys(stories)
       </div>`;
   })
   .join("");
-// --- Modal Setup ---
 const modal = document.getElementById("storyModal");
 const modalTitle = document.getElementById("modalTitle");
 const modalText = document.getElementById("modalText");
 const narrationAudio = document.getElementById("narrationAudio");
 const narrationBtn = document.getElementById("narrationBtn");
-// --- Open Modal and Load Story ---
 document.querySelectorAll(".story-tile").forEach(tile => {
   tile.addEventListener("click", async () => {
     const key = tile.dataset.story;
@@ -48,19 +46,16 @@ document.querySelectorAll(".story-tile").forEach(tile => {
     narrationAudio.play().catch(() => {});
   });
 });
-// --- Close Modal ---
 function closeModal() {
   modal.classList.remove("active");
   narrationAudio.pause();
 }
-// --- Narration Play/Pause ---
 narrationBtn.addEventListener("click", () => {
   if (narrationAudio.paused) narrationAudio.play();
   else narrationAudio.pause();
 });
-// --- Footer Year ---
 document.getElementById("year").textContent = new Date().getFullYear();
-// ---------------- SEARCH OVERLAY ----------------
+//SEARCH OVERLAY
 (function initSearchOverlay() {
   const searchLink = document.querySelector(
     'a[href="search.html"], a[href="#search"], a[data-search="true"]'
@@ -71,7 +66,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
     openSearchOverlay();
   });
   function openSearchOverlay() {
-    if (document.getElementById("search-overlay")) return; // already open
+    if (document.getElementById("search-overlay")) return; 
     const overlay = document.createElement("div");
     overlay.id = "search-overlay";
     overlay.innerHTML = `
@@ -83,11 +78,9 @@ document.getElementById("year").textContent = new Date().getFullYear();
       </div>
     `;
     document.body.appendChild(overlay);
-    // --- Close handler ---
     overlay.addEventListener("click", (ev) => {
       if (ev.target === overlay || ev.target.id === "close-search") overlay.remove();
     });
-    // --- Search logic ---
     const input = overlay.querySelector("#search-input");
     const resultsBox = overlay.querySelector("#search-results");
     const allStories = Object.keys(stories).map(title => ({
@@ -117,7 +110,6 @@ document.getElementById("year").textContent = new Date().getFullYear();
         )
         .join("");
     });
-    // --- Result click handler ---
     resultsBox.addEventListener("click", (ev) => {
       const res = ev.target.closest(".search-result");
       if (res) {
@@ -145,7 +137,6 @@ document.getElementById("year").textContent = new Date().getFullYear();
       .then(res => res.text())
       .then(data => (modalText.textContent = data))
       .catch(() => (modalText.textContent = "Failed to load story."));
-
     narrationAudio.src = s.narration;
     narrationAudio.play().catch(() => {});
   }

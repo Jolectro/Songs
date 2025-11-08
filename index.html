@@ -5,65 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome!</title>
   <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, #0a0a0a, #333);
-      color: white;
-      font-family: 'Segoe UI', sans-serif;
-      overflow: hidden;
-      transition: opacity 1s ease;
-    }
-    .logo {
-      width: 300px;
-      height: 300px;
-      border: 6px solid rgba(255,255,255,0.3);
-      overflow: hidden;
-      border-radius: 50%;
-      box-shadow: 0 0 25px rgba(0,212,255,0.5);
-      animation: spin 2s linear infinite;
-      margin-bottom: 40px;
-    }
-    .logo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    @keyframes spin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    .progress-container {
-      width: 80%;
-      max-width: 400px;
-      height: 10px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 5px;
-      overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      margin-bottom: 30px;
-    }
-    .progress-bar {
-      height: 100%;
-      width: 0%;
-      background: linear-gradient(90deg, #00d4ff, #00ff99);
-      border-radius: 5px;
-      transition: width 0.3s ease;
-    }
-    h1 {
-      font-size: 1.5rem;
-      letter-spacing: 1px;
-      animation: fadeText 2s ease-in-out infinite alternate;
-    }
-    @keyframes fadeText {
-      from { opacity: 0.5; transform: scale(0.95); }
-      to { opacity: 1; transform: scale(1.05); }
-    }
-    body.fade-out {opacity: 0;}
+    body {margin:0; height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; background:linear-gradient(135deg,#0a0a0a,#333); color:white; font-family:'Segoe UI',sans-serif; overflow:hidden; transition:opacity 1s ease;}
+    .logo {width:300px; height:300px; border:6px solid rgba(255,255,255,0.3); overflow:hidden; border-radius:50%; box-shadow:0 0 25px rgba(0,212,255,0.5); animation:spin 2s linear infinite; margin-bottom:40px;}
+    .logo img {width:100%; height:100%; object-fit:cover;}
+    @keyframes spin {from{transform:rotate(0deg);} to{transform:rotate(360deg);}}
+    .progress-container {width:80%; max-width:400px; height:10px; background:rgba(255,255,255,0.1); border-radius:5px; overflow:hidden; box-shadow:0 0 10px rgba(0,0,0,0.5); margin-bottom:30px;}
+    .progress-bar {height:100%;width:0%;background:linear-gradient(90deg,#ffb347,#ffcc33);border-radius:5px;transition:width 0.3s ease;}
+    h1 {font-size:1.5rem; letter-spacing:1px; animation:fadeText 2s ease-in-out infinite alternate;}
+    @keyframes fadeText {from{opacity:0.5; transform:scale(0.95);} to{opacity:1; transform:scale(1.05);}}
+    body.fade-out {opacity:0;}
   </style>
 </head>
 <body>

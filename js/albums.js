@@ -58,14 +58,14 @@ AOS.init({ duration: 5000, easing: "ease-out-cubic", once: false });
         title: "Run Away",
         theme: "Romantic escapade",
         notes: "Escape, freedom, desire",
-        interpretation: "Away we go. Hearts on the move, chasing freedom."
+        interpretation: "Away we go. Hearts on the move as we chase freedom."
       },
       album6: {
         emoji: "🌌",
         title: "Gloomy Aurora",
         theme: "Heartbreak with ambiance",
         notes: "Melancholy, longing, solitude",
-        interpretation: "Heartbreak under glowing skies — beautifully bruised."
+        interpretation: "Heartbreak under glowing skies, am I beautifully bruised?"
       },
       album7: {
         emoji: "🕰️",
@@ -79,28 +79,28 @@ AOS.init({ duration: 5000, easing: "ease-out-cubic", once: false });
         title: "Nature’s Park",
         theme: "Life reflection",
         notes: "Imagination, Oasis, wonder",
-        interpretation: "Creation, mysteries, and meaning in the wild."
+        interpretation: "Creation, mysteries, and searching for Purpose in the wild."
       },
       album9: {
         emoji: "🛸",
         title: "Futuristic Voyage",
         theme: "Science fiction saga",
         notes: "Time travel, rebellion, Space Odyssey",
-        interpretation: "Time unravels. Past and Future collide in a galactic storm."
+        interpretation: "Time unravels as the Past and Future collide in a galactic storm."
       },
       album10: {
         emoji: "🏙️",
         title: "Grand Times",
         theme: "Superstardom",
         notes: "Fame, spectacle, legacy",
-        interpretation: "All roads lead to the crown. Stardom, legend, legacy."
+        interpretation: "All roads lead to the crown! Stardom, legend, legacy."
       },
       album11: {
         emoji: "💙",
         title: "True Blue Cronies",
         theme: "Unbreakable Friendship",
         notes: "Loyalty, joy, platonic bonds",
-        interpretation: "Love songs — but for our squad. Pieces that hug like real friends do."
+        interpretation: "Love songs — but for our squad. Pieces that hug like real friends."
       },
       album12: {
         emoji: "📸",
@@ -114,35 +114,35 @@ AOS.init({ duration: 5000, easing: "ease-out-cubic", once: false });
         title: "Darkest Deep",
         theme: "Internal chaos",
         notes: "Loneliness, pressure, self-struggle",
-        interpretation: "These aren’t just songs — they’re inner storms raging deep inside."
+        interpretation: "These aren’t just songs — they’re inner storms that raged deep inside me."
       },
       album14: {
         emoji: "🕊️",
         title: "Final Farewell",
         theme: "Letting go",
         notes: "Mourning, closure, soul release",
-        interpretation: "Farewells in lyrical form. Whether it’s people, dreams, or past selves — this album buries them beautifully."
+        interpretation: "Lyrical Farewells for people, dreams, or past selves."
       },
       album15: {
         emoji: "💘",
         title: "Love Tales",
         theme: "Romantic highs and heartbreaks",
         notes: "Infatuation, devotion, passion",
-        interpretation: "Tearful kisses and slow dancing with your first love, raw and vulnerable."
+        interpretation: "Tearful kisses and slow dancing with your first love."
       },
       album16: {
         emoji: "🤘",
         title: "Rocky Rolly",
         theme: "Musical liberation",
         notes: "Rock, dance, groovy",
-        interpretation: "No rules. Just rhythm. Melodic and contagious energy to dance through doubt."
+        interpretation: "No rules. Just rhythm. Melodic and contagious energy through the roof."
       },
       album17: {
         emoji: "❓",
         title: "Who Am I?",
         theme: "Identity crisis and self-realization",
         notes: "Searching, masks, truth",
-        interpretation: "These tracks peel back the layers. Every line is a mirror. Every beat — a truth bomb."
+        interpretation: "These tracks peel back the layers of every mask. Every line is a mirror. Every beat, a truth bomb."
       },
       album18: {
         emoji: "👑",
@@ -156,7 +156,7 @@ AOS.init({ duration: 5000, easing: "ease-out-cubic", once: false });
         title: "Akademic Days",
         theme: "School life and dreams",
         notes: "Stress, ambition, pressure",
-        interpretation: "Classrooms, breakups, wild ambitions — this is your youth in 4-minute bursts of truth."
+        interpretation: "Classrooms, breakups, wild ambitions."
       },
       album20: {
         emoji: "🌍",
@@ -166,9 +166,7 @@ AOS.init({ duration: 5000, easing: "ease-out-cubic", once: false });
         interpretation: "Where it all started. This is a return to the source — honoring where you're from, to power where you're going."
       }
     };
- 
     const songs = {};
-
     function makeSlugs(title) {
     const lower = String(title).toLowerCase().trim();
     const slugHyphen = lower
